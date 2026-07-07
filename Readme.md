@@ -1,4 +1,4 @@
-***Rushd Telegram Bot
+Rushd Telegram Bot
 A modular and automated Telegram bot built with Node.js, Telegraf and node-cron.
 ## Core Capabilities : 
 - Cron-based Broadcasting: Executes automated tasks to send scheduled messages to multiple predefined Telegram groups.
