@@ -2,6 +2,7 @@ require ('dotenv').config();
 const { Telegraf } = require('telegraf');
 const { upsertGroup, setGroupActive, getActiveGroups } = require('./groups-store');
 const { sundayMessage } = require('./tasks/weekly-message');
+const { coachesMessage } = require('./tasks/biweekly-message');
 
 const BOT_TOKEN = process.env.BOT_TOKEN;
 
@@ -51,6 +52,16 @@ bot.on('my_chat_member', async (ctx) => {
 
 // Initialize the weekly message task
 sundayMessage(bot);
+coachesMessage(bot);
+
+bot.telegram.setMyCommands([
+    {
+        command: 'addgroup',
+        description: 'Register this group in the bot.',
+    }
+]).then(() => {
+    console.log("📋 Command menu updated successfully!");
+});
 
 // Launch the bot
 bot.launch().then(() => {
