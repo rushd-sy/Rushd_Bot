@@ -52,7 +52,7 @@ bot.on('my_chat_member', async (ctx) => {
 
 // Initialize the weekly message task
 sundayMessage(bot);
-coachesMessage(bot);
+// coachesMessage(bot);
 
 bot.telegram.setMyCommands([
     {

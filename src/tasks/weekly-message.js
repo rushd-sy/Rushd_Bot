@@ -20,7 +20,7 @@ function sundayMessage(bot) {
           `⏳ [Weekly Message]: Preparing to send messages to ${activeGroups.length} group(s)...`,
         );
         const messageText =
-          "تذكير أسبوعي 📅\nيرجى إتمام تعبئة استمارة المتابعة الأسبوعية عبر الرابط التالي:\nhttps://docs.google.com/forms/d/e/1FAIpQLSflv4lrXW3-ZEv3P3hegpwKXvXjXeIwQTNUJ8vjhafJdPGkyA/viewform\n\nيعطيكم العافية جميعاً!";
+          "تذكير أسبوعي 📅\nيرجى إتمام تعبئة استمارة المتابعة الأسبوعية عبر الرابط التالي:\nhttps://forms.gle/uXfWsKYJEf4L2TG68\n\nيعطيكم العافية جميعاً!";
 
         for (const group of activeGroups) {
           try {
